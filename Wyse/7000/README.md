@@ -2,23 +2,23 @@
 
 ## Overview
 
-The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the
-same with differences in the video capabilities they come with. Details are available
-here: https://www.dell.com/ae/business/p/wyse-z-class/pd.
+The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the video capabilities they come with. Details are available here: https://www.dell.com/ae/business/p/wyse-z-class/pd.
 
-They're also referred to as the "z class" thin clients, the one I have examined is a
-Zx0 unit.
+They're also referred to as the "z class" thin clients, the one I have examined is a Zx0 unit.
 
-What you'll find here is all the info I have found, both by reading and by doing, as well
-as tips and tricks to hack it up to run various things, namely Linux.
+What you'll find here is all the info I have found, both by reading and by doing, as well as tips and tricks to hack it up to run various things, namely Linux.
+
+## Background
+
+A couple years back I wanted to delve into the world of home automation and IoT, mainly to see the real world effects of their security and practical methods to improve that.
+
+I started with the basics, an Echo Dot and some smart bulbs and gradually grew out of those. I decided that I'd like to give Home Assistant a shot and see what that was made of. I started with HA on an ODROID-C2 I had laying around, it hung about every day and had to be hard powered off and on so I set it aside for a year or so. I then tried it on a Pi 3 that came out of a Pi 4 upgrade and while it seemed ok it was a bit slow and again it hung, usually when I compiled ESPHome firmware. Someone on an ESPHome group had mentioned they were running HA on an old Dell Wyse thin client so I picked one up and here we are.
 
 ## Specs
 
 ### Processor
 
-I have found various data sheets for the 7010 and 7020 that claim it carries a quad
-core AMD GX-420CA at 2.0 GHz however the 7020 (more on that later) that I purchased 
-has the following for CPU:
+I have found various data sheets for the 7020 that claim it carries a quad core AMD GX-420CA at 2.0 GHz however the 7020 (more on that later) that I purchased has the following for CPU:
 
 ```
 sysadmin@lab-ws01:~$ cat /proc/cpuinfo
@@ -79,15 +79,28 @@ address sizes   : 36 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 ```
 
-The data sheet I was looking at here https://thinclientbenefits.com/uploads/products/downloads/Wyse-7020-Thin-Client-Data-Sheet.pdf must be for a different version. Most of the eBay listings I
-see for the 7000's say they have the AMD dual-core CPU I have.
+The data sheet I was looking at here https://thinclientbenefits.com/uploads/products/downloads/Wyse-7020-Thin-Client-Data-Sheet.pdf could be for a different version. Most of the eBay listings I see for the 7000's say they have the AMD dual-core CPU I have.
+
+Further research seems to indicate that the 7010 did in fact ship with the dual core AMD G-T56N @ 1.5GHz the weird part is when I put the service tag from the unit I have (with the G-T56N processor shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q which in other places shows as a 7020.
+
+End result: watch eBay listings carefully for the 7010 and 7020 models, as well as the ones saying Zx0 on them. Best as I can tell these shipped as:
+
+* Wyse 7010 - Dual-Core AMD G-T56N @ 1.5GHz
+* Wyse 7020 - Quad-Core AMD GX-420CA @ 2.0 GHz
+
+Prices can be all over the map on eBay for these and in many cases the faster quad-core CPU doesn't gain much of a price increase. The dual-core unit is quite useable though I still need to pick up a quad-core 7020 to see for real.
+
+## Storage
+
+I'm speaking here on the 7010 I have my hands on but from what I have read it shares the same storage options as the 7020.
+
+There is an onboard 2.5" SATA MLC flash chip, the original ones were made by Apacer and come in various sizes from 8 to 64GB. A laptop 2.5" SSD will NOT fit inside without major modifications. I would leave that alone and just buy a used one off eBay if need be. For most embedded/dedicated type operations, such as Home Assistant, 64GB, or even 32GB, is adequate.
 
 ## Networking
 
 ## Power
 
-The 7010 and 7020 both use a 19V power supply, they're available on eBay or on Amazon
-here: https://www.amazon.com/APD-Adapter-Client-Class-Compatible/dp/B07PBMNH81
+The 7010 and 7020 both use a 19V power supply, they're available on eBay or on Amazon here: https://www.amazon.com/APD-Adapter-Client-Class-Compatible/dp/B07PBMNH81
 
 
 ## Other Resources
