@@ -188,6 +188,10 @@ The quad-core 7020 version _might_ do ok for that, again, a bit maybe. I have it
 
 I suspect it would work wonderfully for Octoprint on your 3D printer though I really like having a Pi 3 for that. It's small enough it can be mounted right on the 3D printer and not have a lot of extra cabling laying around. A 7000 in this use case would be a bit messy on the cabling side.
 
+### Container Host
+
+If you bump the RAM and add an internal disk, say 1-2TB, the quad-core 7020 would make a good little container host machine. Could easily put 3 or more of them into a Docker Swarm and avoid all the Kubernetes complexity.
+
 ## Other Resources
 
 * [Parky Towers](https://www.parkytowers.me.uk/thin/wyse/z/zx0q/). Great site with all sorts of thin client info, I found the information there quite helpful.
