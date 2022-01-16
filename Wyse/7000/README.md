@@ -9,6 +9,9 @@ here: https://www.dell.com/ae/business/p/wyse-z-class/pd.
 They're also referred to as the "z class" thin clients, the one I have examined is a
 Zx0 unit.
 
+What you'll find here is all the info I have found, both by reading and by doing, as well
+as tips and tricks to hack it up to run various things, namely Linux.
+
 ## Specs
 
 ### Processor
