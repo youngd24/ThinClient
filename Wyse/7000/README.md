@@ -94,7 +94,11 @@ Prices can be all over the map on eBay for these and in many cases the faster qu
 
 I'm speaking here on the 7010 I have my hands on but from what I have read it shares the same storage options as the 7020.
 
-There is an onboard 2.5" SATA MLC flash chip, the original ones were made by Apacer and come in various sizes from 8 to 64GB. A laptop 2.5" SSD will NOT fit inside without major modifications. I would leave that alone and just buy a used one off eBay if need be. For most embedded/dedicated type operations, such as Home Assistant, 64GB, or even 32GB, is adequate.
+There is an onboard 2.5" SATA MLC flash chip, the original ones were made by Apacer and come in various sizes from 8 to 64GB. A laptop 2.5" SSD will NOT fit inside without major modifications. I would leave that alone and just buy a used one off eBay if need be. For most embedded/dedicated type operations, such as Home Assistant, 64GB, or even 32GB, is adequate. I'm writing this right now on the 7010 with a 32GB MLC flash chip running Ubuntu.
+
+In addition to the onboard MLC connector there is an additional SATA II data port that can be used for additional storage. It's not a standard SATA connector, thanks Dell, the power connector is elsewhere on the board. That power connector is a Micro JST (MJST) 1.5mm 4-pin one so a custom cable will be needed to connect to the SATA drive. I just ordered one from Aliexpress to see how it can be made, hopefully I'll remember to update this after I figure that out.
+
+The additional disk had a storage caddy available for it from Dell but I have not been able to track down that part number. There is however a 3D printable STL file on the Internet that I hope to try out and see if it fits or can be modded to fit. It says it's for an Optiplex so I'm not all that hopeful but images I have seen of the Wyse caddy don't look all that different. The STL file is here: https://www.stlfinder.com/model/dell-optiplex-hhd-hard-drive-caddy-s579m5EN/2291325/ if you want to check it out.
 
 ## Networking
 
