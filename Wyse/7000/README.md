@@ -201,8 +201,9 @@ As a dedicated/embedded machine for things that don't require a ton of power, th
 ## Other Resources
 
 - [Parky Towers](https://www.parkytowers.me.uk/thin/wyse/z/zx0q/). Great site with all sorts of thin client info, I found the information there quite helpful.
+- Reddit [thread](https://www.reddit.com/r/HomeServer/comments/2n3i5t/wyse_z90d7_thinclient_sata_drive_upgrade/) on teh hard drive subject. Some bits there.
 - YouTube videos
 	- [Wyse Thin Client Rx0L Teardown](https://www.youtube.com/watch?v=JOrZVa5QehY)
 	- [Was it wise to buy the Wyse?](https://www.youtube.com/watch?v=oy6g3zaD4Jc)
 	- [Wyse thin client review and demo](https://www.youtube.com/watch?v=gGgBp9N6Vco)
-	- Another one
+	- [How to install a laptop hard drive in a Dell Wyse Z or R](https://www.youtube.com/watch?v=alUr093OMRw)
