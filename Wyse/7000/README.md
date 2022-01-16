@@ -104,7 +104,7 @@ The additional disk had a storage caddy available for it from Dell but I have no
 
 ## Power
 
-The 7010 and 7020 both use a 19V power supply, they're available on eBay or on Amazon here: https://www.amazon.com/APD-Adapter-Client-Class-Compatible/dp/B07PBMNH81
+The 7010 and 7020 both use a 19V power supply, they're available on eBay or on [Amazon](https://www.amazon.com/APD-Adapter-Client-Class-Compatible/dp/B07PBMNH81)
 
 
 ## Other Resources
