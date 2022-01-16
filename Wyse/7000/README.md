@@ -184,6 +184,10 @@ Works great, doing it now. More to come in a page dedicated to just that.
 
 The quad-core 7020 version _might_ do ok for that, again, a bit maybe. I have it running on a Pi 4 and it works decently for 1 stream decode though it's a bit slow for that. I might test this out when I get a 7020 and see how it does.
 
+### Octoprint
+
+I suspect it would work wonderfully for Octoprint on your 3D printer though I really like having a Pi 3 for that. It's small enough it can be mounted right on the 3D printer and not have a lot of extra cabling laying around. A 7000 in this use case would be a bit messy on the cabling side.
+
 ## Other Resources
 
 * [Parky Towers](https://www.parkytowers.me.uk/thin/wyse/z/zx0q/). Great site with all sorts of thin client info, I found the information there quite helpful.
