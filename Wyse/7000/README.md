@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the video capabilities they come with. Details are available here: https://www.dell.com/ae/business/p/wyse-z-class/pd.
+The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the video capabilities they come with. Details are available [here](https://www.dell.com/ae/business/p/wyse-z-class/pd).
 
 They're also referred to as the "z class" thin clients, the one I have examined is a Zx0 unit.
 
@@ -81,7 +81,7 @@ address sizes   : 36 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 ```
 
-The data sheet I was looking at here https://thinclientbenefits.com/uploads/products/downloads/Wyse-7020-Thin-Client-Data-Sheet.pdf could be for a different version. Most of the eBay listings I see for the 7000's say they have the AMD dual-core CPU I have.
+The data sheet I was looking at [here](https://thinclientbenefits.com/uploads/products/downloads/Wyse-7020-Thin-Client-Data-Sheet.pdf could be for a different version. Most of the eBay listings I see for the 7000's say they have the AMD dual-core CPU I have).
 
 Further research seems to indicate that the 7010 did in fact ship with the dual core AMD G-T56N @ 1.5GHz the weird part is when I put the service tag from the unit I have (with the G-T56N processor shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q which in other places shows as a 7020.
 
