@@ -16,6 +16,10 @@ I started with the basics, an Echo Dot and some smart bulbs and gradually grew o
 
 Someone on an ESPHome group had mentioned they were running HA on an old Dell Wyse thin client so I picked one up and here we are. If you're reading this in the future, beyond 2022, you'll remember the chip shortage we're in the midst of. Finding a Raspberry Pi 4 right now, at least at a reasonable cost, is difficult at best bordering on impossible. So, in theory, my idea was to leverage the lower cost of a thin client for applications where I would normally use a Raspberry Pi.
 
+## Other Models
+
+If someone can compare to the 5000 and 3000 series thin clients here it would be much appreciated.
+
 ## Specs
 
 ### Processor
@@ -104,7 +108,7 @@ I've read that the 7020 had additional options for video, apparently in a daught
 
 ## Storage
 
-I'm speaking here on the 7010 I have my hands on but from what I have read it shares the same storage options as the 7020.
+I'm speaking here on the 7010, that I have my hands on, but from what I have read it shares the same storage options as the 7020.
 
 There is an onboard 2.5" SATA MLC flash chip, the original ones were made by Apacer and come in various sizes from 8 to 64GB. A laptop 2.5" SSD will **NOT** fit inside without major modifications. I would leave that alone and just buy a used one off eBay if need be. For most embedded/dedicated type operations, such as Home Assistant, 64GB, or even 32GB, is adequate. I'm writing this right now on the 7010 with a 32GB MLC flash chip running Ubuntu.
 
