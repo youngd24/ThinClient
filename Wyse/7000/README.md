@@ -2,9 +2,7 @@
 
 ## Overview
 
-The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the video capabilities they come with. Details are available [here](https://www.dell.com/ae/business/p/wyse-z-class/pd).
-
-They're also referred to as the "z class" thin clients, the one I have examined is a Zx0 unit.
+The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the processor and video capabilities they come with. Details are available [here](https://www.dell.com/ae/business/p/wyse-z-class/pd). They're also referred to as the "z class" thin clients, the one I have examined is a Zx0 unit.
 
 What you'll find here is all the info I have found, both by reading and by doing, as well as tips and tricks to hack it up to run various things, namely Linux.
 
@@ -136,6 +134,8 @@ One of the metrics I was curious about was the power used by the unit, is it com
 
 ## BIOS
 
+The BIOS is very typical Dell, press DEL on the POST screen to enter setup mode, the default password is `Fireport`. You can adjust most of the settings here, I took the defaults and it's been fine since. I did notice that on the unit I was testing on, a 7010 without wireless, there was an option to enable the on-board WiFi despite me not finding a chip on the motherboard anywhere.
+
 ## Cost
 
 I picked up the 7010 I have, new in the box, with the power supply, stand, mouse and DVI to VGA adapter for $29.99 plus $9 shipping, call it $40. It came with 4GB RAM and no MLC flash storage so I purchsed a 32GB MLC for $18 with free shipping. So, as of today, the cost comes to:
@@ -191,6 +191,12 @@ I suspect it would work wonderfully for Octoprint on your 3D printer though I re
 ### Container Host
 
 If you bump the RAM and add an internal disk, say 1-2TB, the quad-core 7020 would make a good little container host machine. Could easily put 3 or more of them into a Docker Swarm and avoid all the Kubernetes complexity.
+
+## Conclusion
+
+Overall it's a decent little machine, especially given what the cost is. It would certainly work as a "daily driver" running Ubuntu for the average  user (think grandma). Windows 10 is a little sluggish on the 7010 (surprise), it might be better on the 7020 with 4 cores along with additional RAM.
+
+As a dedicated/embedded machine for things that don't require a ton of power, that just just sit there and run, it's ideal. If you need more than what the 7000 can do, in either the 7010 or 7020 models, I wouldn't invest much in upgrades and instead opt for a NUC. If you're investing more than $150 in a thin client it's probably a use case that would benefit from more than what the 7000 offers. It really all depends on what you're doing but consider this as an option in your toolkit.
 
 ## Other Resources
 
