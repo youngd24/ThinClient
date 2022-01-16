@@ -203,3 +203,5 @@ As a dedicated/embedded machine for things that don't require a ton of power, th
 - [Parky Towers](https://www.parkytowers.me.uk/thin/wyse/z/zx0q/). Great site with all sorts of thin client info, I found the information there quite helpful.
 - YouTube videos
 	- [Wyse Thin Client Rx0L Teardown](https://www.youtube.com/watch?v=JOrZVa5QehY)
+	- [Was it wise to buy the Wyse?](https://www.youtube.com/watch?v=oy6g3zaD4Jc)
+	- [Wyse thin client review and demo](https://www.youtube.com/watch?v=gGgBp9N6Vco)
