@@ -134,12 +134,12 @@ One of the metrics I was curious about was the power used by the unit, is it com
 
 ## Cost
 
-I picked up the 7010 I have, new in box, with the power supply, stand, mouse and DVI to VGA adapter for $29.99 plus $9 shipping, call it $40. IT came with 4GB RAM and no MLC flash storage so I purchsed a 32GB MLC for $18 with free shipping. So, as of today, the cost comes to:
+I picked up the 7010 I have, new in the box, with the power supply, stand, mouse and DVI to VGA adapter for $29.99 plus $9 shipping, call it $40. It came with 4GB RAM and no MLC flash storage so I purchsed a 32GB MLC for $18 with free shipping. So, as of today, the cost comes to:
 
 * 7010 4GB RAM - $40
 * 32GB MLC flash - $18
 
-__Total cost: $58__
+__Estimated total cost: $58__
 
 Here's a proposal for a fairly packed system:
 
@@ -148,15 +148,19 @@ Here's a proposal for a fairly packed system:
 * 64GB MLC flash - $40
 * 2TB SATA SSD - $90
 
-__Total: $250__
+__Estimated total cost: $250__
 
-That's a bit on the high side for me personally, you're more than half way into a NUC at that point though with this chip shortage it might become even more attractive down the road. Personally I would stick to use cases where 4-8GB RAM and 32-64GB MLC flash is sufficient, that will keep the cost in the $100-125 area, comparable to a Pi kit.
+That's a bit on the high side for me personally, you're more than half way into a NUC at that point though with this chip shortage it might become even more attractive down the road. Personally I would stick to use cases where 4-8GB RAM and 32-64GB MLC flash is sufficient, that will keep the cost in the $100-125 area, comparable to a Pi kit. There's probably a middle-ground where you bump the RAM _or_ the disk for a given use case.
 
 ## Operating Systems
 
 ### Linux
 
 Thus far the only OS I have tried is Ubuntu 20.04 LTS, installation was as easy as formatting a USB key (FAT/GUID partition map) on my Mac, downloading the Ubuntu 20.04 ISO and burning it to the USB key using Balena Etcher. I put the USB key in and on boot the BIOS detected no OS on the internal MLC flash and booted straight to the USB key. From there it was an uneventful Ubuntu installation.
+
+### Windows 10
+
+Under construction.
 
 ## Use Cases and Ideas
 
