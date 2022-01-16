@@ -200,7 +200,7 @@ As a dedicated/embedded machine for things that don't require a ton of power, th
 
 ## Other Resources
 
-There's not a ton out there about this subject but here's what I found. If you have more feel free to issue a GitHub PR (Pull Request) here with anything you find.
+There's not a ton out there about this subject but here's what I found. If you have more, by all means feel free to issue a GitHub PR (Pull Request) here with anything you find useful for others (myself included)
 
 - [Parky Towers](https://www.parkytowers.me.uk/thin/wyse/z/zx0q/). Great site with all sorts of thin client info, I found the information there quite helpful.
 - Reddit [thread](https://www.reddit.com/r/HomeServer/comments/2n3i5t/wyse_z90d7_thinclient_sata_drive_upgrade/) on the hard drive subject. Some bits there.
