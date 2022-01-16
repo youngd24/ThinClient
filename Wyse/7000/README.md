@@ -152,7 +152,29 @@ __Total: $250__
 
 That's a bit on the high side for me personally, you're more than half way into a NUC at that point though with this chip shortage it might become even more attractive down the road. Personally I would stick to use cases where 4-8GB RAM and 32-64GB MLC flash is sufficient, that will keep the cost in the $100-125 area, comparable to a Pi kit.
 
+## Operating Systems
 
+### Linux
+
+Thus far the only OS I have tried is Ubuntu 20.04 LTS, installation was as easy as formatting a USB key (FAT/GUID partition map) on my Mac, downloading the Ubuntu 20.04 ISO and burning it to the USB key using Balena Etcher. I put the USB key in and on boot the BIOS detected no OS on the internal MLC flash and booted straight to the USB key. From there it was an uneventful Ubuntu installation.
+
+## Use Cases and Ideas
+
+### k3s
+
+A few of these would make a nice little k3s Kubernetes cluster. I have run k3s on Raspberry Pi's however the issue I hit was almost always the fact that most of the container suppliers didn't have arm processor builds available. What's messed up is that k3s doens't tell you it can't run the container, it allows you to deploy it and fail victoriously. With the 7000 series AMD x86_64 architecture this won't be an issue. Then there's the fact it has a gigabit ethernet port, not 100MB like a Pi 3, so you get faster networking. Not sure how well the little AMD CPU would keep up with full-chugging network I/O but it's likely more performant than a Pi 3 is.
+
+### Network Attached Storage (NAS)
+
+It _might_ work ok for this, the gig-e networking port is an upside though only 1 is a ding against it. You can't fit much in the way of disk inside with the single 2.5" SATA disk port. Given there's external USB-2 ports it might be possible to attach a few external USB-SATA disks and serve those out over CIFS/NFS. Maybe, YMMV.
+
+### Home Assistant
+
+Works great, doing it now. More to come in a page dedicated to just that.
+
+### Plex Media Server
+
+The quad-core 7020 version _might_ do ok for that, again, a bit maybe. I have it running on a Pi 4 and it works decently for 1 stream decode though it's a bit slow for that. I might test this out when I get a 7020 and see how it does.
 
 ## Other Resources
 
