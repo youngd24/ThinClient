@@ -4,7 +4,7 @@
 
 The Dell Wyse 7000 series consists of the 7010 and 7020 model. They are virtually the same with differences in the processor and video capabilities they come with. Details are available [here](https://www.dell.com/ae/business/p/wyse-z-class/pd). They're also referred to as the "z class" thin clients, the one I have examined is a Zx0 unit.
 
-What you'll find here is all the info I have found, both by reading and by doing, as well as tips and tricks to hack it up to run various things, namely Linux.
+What you'll find here is all the info I have found, both by reading and by doing, as well as tips and tricks to hack it up to run various things, namely Linux or Windows.
 
 ## Background
 
@@ -96,11 +96,11 @@ Prices can be all over the map on eBay for these and in many cases the faster qu
 
 ## Memory
 
-The 7010 I picked up came with 4GB RAM, all in (1) DDR-3 chip. There are 2 memory slots on the motherboard and the tech sheet says it can take up to 16GB RAM in (2) DDR-3 8GB chips. Even running a full Ubuntu desktop I'm using around half the memory it has installed but given the relatively low cost of DDR-3 memory a 16GB upgrade is in the near future.
+The 7010 I picked up came with 4GB RAM, all in (1) DDR3 chip. There are 2 memory slots on the motherboard and the tech sheet says it can take up to 16GB RAM using (2) DDR3 8GB chips. Even running a full Ubuntu desktop I'm using around half the memory it has installed but given the relatively low cost of DDR3 memory a 16GB upgrade is in the future.
 
 ## Display
 
-You have to go into this remembering these things were made in 2015, 2016 and so on and targeted the average corporate "task worker" type user for virtual desktop computing. As a result the base units don't have much in the way of video and only has a DVI connector on it.
+You have to go into this remembering these things were made in like 2015/2016 and targeted the average corporate "task worker" user for virtual desktop computing. As a result the base units don't have much in the way of video. It has a DVI connector, marked as (1) and a DisplayPort next to it, marked as (2). So, it'll do two monitors but you'll have to mix DVI and DisplayPort to do it. Weird.
 
 I've read that the 7020 had additional options for video, apparently in a daughter card, that could drive up to 4 monitors though I've never seen one like this. 2 ports would be helpful if being used as a workstation but for most headless embedded/dedicated use cases the DVI port will generally be sufficient and go unused.
 
@@ -260,7 +260,7 @@ This didn't work for me, tried twice and the 7010 wouldn't boot the Windows inst
  
  In theory you could dual boot Linux and Windows using either ones boot manager. Add in another 1-2TB SATA drive and you'd have some interesting options for this.
 
- I wanted to be able to boot Windows 10 on mine for lab test work but don't want to dual boot due to the small 32GB MLC flash installed. Ideally I'd be able to install Windows 10 onto a separate UB key that I could insert when I want to boot Windows. I attempted this but the Windows installer was unable to see the USB key to install on to. I don't know the Windows installer well enough to say.
+ I wanted to be able to boot Windows 10 on mine for lab test work I far prefer Linux, but don't want to dual boot due to the small 32GB MLC flash installed. Ideally I wanted to be able to install Windows 10 onto a separate UB key that I could insert when I want to boot Windows. I attempted this but the Windows installer was unable to see the USB key to install on to. I don't know the Windows installer well enough to say.
 
  Next up will be to try to create a portable Windows 10 installation on a USB key that can, at least in theory, do what I want.
 
@@ -307,3 +307,7 @@ There's not a ton out there about this subject but here's what I found. If you h
 	- [Was it wise to buy the Wyse?](https://www.youtube.com/watch?v=oy6g3zaD4Jc)
 	- [Wyse thin client review and demo](https://www.youtube.com/watch?v=gGgBp9N6Vco)
 	- [How to install a laptop hard drive in a Dell Wyse Z or R](https://www.youtube.com/watch?v=alUr093OMRw)
+	
+## Contact Info
+
+Questions or comments can be directed to youngd23 at gmail dot com otherwise issue a Pull Request here with any changes.
