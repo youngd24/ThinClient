@@ -22,7 +22,14 @@ If someone can compare to the 5000 and 3000 series thin clients here it would be
 
 ### Processor
 
-I have found various data sheets for the 7020 that claim it carries a quad core AMD GX-420CA at 2.0 GHz however the 7020? (more on that later) that I purchased has the following for CPU:
+They shipped with the following processor configurations in the base 7010 and 7020:
+
+* Wyse 7010 - Dual-Core AMD G-T56N @ 1.5GHz
+* Wyse 7020 - Quad-Core AMD GX-420CA @ 2.0 GHz
+
+The other models that have additional display ports, along with different video cards, come with different CPU's as well. The 7020 quad display version comes with an AMD GX-415GA 1.5GHz Quad Core processor. The "cloud desktop" models come with either the G-T56N processor or are a SOC board, no idea what that processor is. Details are available [here](https://www.dell.com/en-us/work/shop/wyse-endpoints-and-software/wyse-7000-series-thin-clients-high-performance-virtual-desktop/spd/wyse-z-class).
+
+Based on what I have seen the unit I purchased is a 7010 model:
 
 ```
 sysadmin@lab-ws01:~$ cat /proc/cpuinfo
@@ -83,16 +90,10 @@ address sizes   : 36 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 ```
 
-The data sheet I was looking at [here](https://thinclientbenefits.com/uploads/products/downloads/Wyse-7020-Thin-Client-Data-Sheet.pdf) could be for a different version. Most of the eBay listings I see for the 7000's say they have the AMD dual-core CPU I have, at least one most of the 7010 listings. I have however seen eBay listings for what is claimed to be a 7010 with the quad-core and 7020's with the dual-core CPU.
 
-Further research seems to indicate that the 7010 did in fact ship with the dual core AMD G-T56N @ 1.5GHz the weird part is when I put the service tag from the unit I have (with the G-T56N processor shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q which in other places shows as a 7020.
+The weird part is when I put the service tag from the unit I have (with the G-T56N processor shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q. I have seen eBay listings for what is claimed to be a 7010 with the quad-core and 7020's with the dual-core CPU so who knows.
 
-End result: watch eBay listings carefully for the 7010 and 7020 models, as well as the ones saying Zx0 on them. Best as I can tell these shipped as:
-
-* Wyse 7010 - Dual-Core AMD G-T56N @ 1.5GHz
-* Wyse 7020 - Quad-Core AMD GX-420CA @ 2.0 GHz
-
-Prices can be all over the map on eBay for these and in many cases the faster quad-core CPU doesn't gain much of a price increase. The dual-core unit is quite useable though I still need to pick up a quad-core 7020 to see for real.
+End result: watch eBay listings carefully for the 7010 and 7020 models, as well as the ones saying Zx0 on them. Prices can be all over the map on eBay for these and in many cases the faster quad-core CPU doesn't gain much of a price increase. The dual-core unit is quite useable though I still need to pick up a quad-core 7020 to see for real. I'd personally use the quad core when possible.
 
 ## Memory
 
