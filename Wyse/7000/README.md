@@ -256,6 +256,14 @@ This didn't work for me, tried twice and the 7010 wouldn't boot the Windows inst
 
  I ultimately used Microsoft's Windows Media Creation Tool to create a USB key based installer. I created a Windows 10 VM on my Mac, using VirtualBox, presented the USB key there and let the media creation tool do its thing. This worked.
 
+ ### Dual Boot
+ 
+ In theory you could dual boot Linux and Windows using either ones boot manager. Add in another 1-2TB SATA drive and you'd have some interesting options for this.
+
+ I wanted to be able to boot Windows 10 on mine for lab test work but don't want to dual boot due to the small 32GB MLC flash installed. Ideally I'd be able to install Windows 10 onto a separate UB key that I could insert when I want to boot Windows. I attempted this but the Windows installer was unable to see the USB key to install on to. I don't know the Windows installer well enough to say.
+
+ Next up will be to try to create a portable Windows 10 installation on a USB key that can, at least in theory, do what I want.
+
 ## Use Cases and Ideas
 
 ### k3s
