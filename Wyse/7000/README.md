@@ -122,6 +122,71 @@ The 7000 series come with onboard Gigabit Ethernet and have an optional WiFi car
 
 These have ample USB ports available, there are (2) USB-2 and (2) USB-3 ports on the back and (2) USB-2 ports on the front. Booting from them works as that's how I installed Ubuntu on it. Well, at least for Linux, haven't tested Windows yet.
 
+To validate the USB speeds I checked lsusb in Linux:
+
+```
+sysadmin@lab-ws01:~$ lsusb | grep 'root hub'
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 009 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 008 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+```
+
+I inserted a USB storage key and verified the front ports are USB-2 and that the keyboard and mouse are connected to the USB-1 ports on the rear. There are 2 additional USB ports on the back that are colored blue, those are the USB-2 ports back there. The ports on the front, despite being USB-2, are black and not the blue color I'm used to. I think the USB standard states they must be blue if next to other speed USB ports which is correctly implemented on the backside.
+
+```
+sysadmin@lab-ws01:~/$ lsusb
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 009 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 008 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 010: ID 0781:5571 SanDisk Corp. Cruzer Fit
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 002: ID 413c:2106 Dell Computer Corp. Dell QuietKey Keyboard
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 002: ID 413c:301a Dell Computer Corp. Dell MS116 USB Mouse
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+```
+
+Interestingly there shows a USB-3 root hub but none of the ports are attached to it that I could find. Perhaps it's internal, on the motherboard or used to attach the WiFi interface.
+
+To test some read and write speeds I put a SanDisk USB key in the front of the unit to benchmark what those ports produced.
+
+Disk configuration:
+
+```
+sysadmin@lab-ws01:~$ sudo fdisk -l /dev/sdb
+Disk /dev/sdb: 29.26 GiB, 31406948352 bytes, 61341696 sectors
+Disk model: Cruzer Fit      
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+Device     Boot Start      End  Sectors  Size Id Type
+/dev/sdb1        2048 61341695 61339648 29.3G  b W95 FAT32
+```
+
+hdparm read tests:
+
+```
+sysadmin@lab-ws01:~$ sudo hdparm -Tt /dev/sdb
+
+/dev/sdb:
+ Timing cached reads:   1620 MB in  2.00 seconds = 809.56 MB/sec
+ Timing buffered disk reads:  58 MB in  3.08 seconds =  18.84 MB/sec
+```
+
+
+
 ## Power
 
 ### Connector
