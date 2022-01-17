@@ -313,4 +313,4 @@ There's not a ton out there about this subject but here's what I found. If you h
 	
 ## Contact Info
 
-Questions or comments can be directed to youngd23 at gmail dot com otherwise issue a Pull Request here with any changes.
+Questions or comments can be directed to youngd24 at gmail dot com otherwise issue a Pull Request here with any changes.
