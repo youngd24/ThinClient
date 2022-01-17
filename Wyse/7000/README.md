@@ -27,7 +27,7 @@ They shipped with the following processor configurations in the base 7010 and 70
 * Wyse 7010 - Dual-Core AMD G-T56N @ 1.5GHz
 * Wyse 7020 - Quad-Core AMD GX-420CA @ 2.0 GHz
 
-The other models that have additional display ports, along with different video cards, come with different CPU's as well. The 7020 quad display version comes with an AMD GX-415GA 1.5GHz Quad Core processor. The "cloud desktop" models come with either the G-T56N processor or are a SOC board, no idea what that processor is. Details are available [here](https://www.dell.com/en-us/work/shop/wyse-endpoints-and-software/wyse-7000-series-thin-clients-high-performance-virtual-desktop/spd/wyse-z-class).
+The other models that have additional display ports, along with different video cards, come with different CPU's as well. The 7020 quad display version comes with an AMD GX-415GA 1.5GHz Quad Core processor. The "cloud desktop" models come with either the G-T56N processor or are a SOC board, no idea what that processor is. Details are available [here](https://www.dell.com/en-uk/work/shop/wyse-endpoints-and-software/wyse-7000-series-thin-clients-high-performance-virtual-desktop/spd/wyse-z-class).
 
 Based on what I have seen the unit I purchased is a 7010 model:
 
@@ -103,11 +103,11 @@ The 7010 I picked up came with 4GB RAM, all in (1) DDR3 chip. There are 2 memory
 
 You have to go into this remembering these things were made in like 2015/2016 and targeted the average corporate "task worker" user for virtual desktop computing. As a result the base units don't have much in the way of video. It has a DVI connector, marked as (1) and a DisplayPort next to it, marked as (2). So, it'll do two monitors but you'll have to mix DVI and DisplayPort to do it. Weird.
 
-I've read that the 7020 had additional options for video, apparently in a daughter card, that could drive up to 4 monitors though I've never seen one like this. 2 ports would be helpful if being used as a workstation but for most headless embedded/dedicated use cases the DVI port will generally be sufficient and go unused.
+I've read that the 7020 had additional options for video, apparently in a daughter card, that could drive up to 4 monitors though I've never seen one like this. 2 ports would be helpful if being used as a workstation but for most headless embedded/dedicated use cases the DVI port will generally be sufficient and go unused. Additional video details are [here](https://www.dell.com/en-uk/work/shop/wyse-endpoints-and-software/wyse-7000-series-thin-clients-high-performance-virtual-desktop/spd/wyse-z-class).
 
 ## Storage
 
-I'm speaking here on the 7010, that I have my hands on, but from what I have read it shares the same storage options as the 7020.
+I'm speaking here on the 7010, that I have my hands on, but from what I have read it shares the same storage options as the 7020. Side note: the "cloud desktop" versions do not come with an MLC flash disk.
 
 There is an onboard 2.5" SATA MLC flash chip, the original ones were made by Apacer and come in various sizes from 8 to 64GB. A laptop 2.5" SSD will **NOT** fit inside without major modifications. I would leave that alone and just buy a used one off eBay if need be. For most embedded/dedicated type operations, such as Home Assistant, 64GB, or even 32GB, is adequate. I'm writing this right now on the 7010 with a 32GB MLC flash chip running Ubuntu.
 
@@ -201,6 +201,8 @@ The 7010 and 7020 both use a 19V power supply, they're available on eBay or on [
 ### Usage
 
 One of the metrics I was curious about was the power used by the unit, is it comparable to a Raspberry Pi or similar? I plugged the 7010 into a Sonoff S31 that has power monitoring on it and fed that data to Home Assistant to monitor. Data to come but from what I can tell it's on par with a Pi 4 in usage.
+
+The specs state that the 7010 consumes "under 9 watts" and that the 7020 is "under 10 watts".
 
 ## BIOS
 
