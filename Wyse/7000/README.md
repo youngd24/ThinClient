@@ -91,7 +91,7 @@ power management: ts ttp tm stc 100mhzsteps hwpstate
 ```
 
 
-The weird part is when I put the service tag from the unit I have (with the G-T56N processor shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q. I have seen eBay listings for what is claimed to be a 7010 with the quad-core and 7020's with the dual-core CPU so who knows.
+The weird part is when I put the service tag from the unit I have (with the G-T56N processor) it shows as a 7020 from Dell. There's also the z series model numbers that seem to not be all that different across the 7010 and 7020 units, the one I have carries a tag on it calling it a Zx0Q. I have seen eBay listings for what is claimed to be a 7010 with the quad-core and 7020's with the dual-core CPU so who knows, typical eBay.
 
 End result: watch eBay listings carefully for the 7010 and 7020 models, as well as the ones saying Zx0 on them. Prices can be all over the map on eBay for these and in many cases the faster quad-core CPU doesn't gain much of a price increase. The dual-core unit is quite useable though I still need to pick up a quad-core 7020 to see for real. I'd personally use the quad core when possible.
 
