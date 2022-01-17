@@ -120,9 +120,15 @@ The 7000 series come with onboard Gigabit Ethernet and have an optional WiFi car
 
 ## USB
 
-These have ample USB ports available, there are (2) USB-2 and (2) USB-3 ports on the back and (2) USB-2 ports on the front. Booting from them works as that's how I installed Ubuntu on it. Well, at least for Linux, haven't tested Windows yet.
+### Configuration
 
-To validate the USB speeds I checked lsusb in Linux:
+These have ample USB ports available, there are (2) USB-2 and (2) USB-1.1 ports on the back and (2) USB-2 ports on the front. Booting from them works as that's how I installed Ubuntu on it. Well, at least for Linux, haven't tested Windows yet.
+
+The slowest ports are the (2) black colored USB-1.1 ones on the back, use those for the keyboard and mouse, they're positioned for just that purpose.
+
+### Performance
+
+To validate the USB port type/speed I checked lsusb in Linux:
 
 ```
 sysadmin@lab-ws01:~$ lsusb | grep 'root hub'
@@ -137,7 +143,7 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 ```
 
-I inserted a USB storage key and verified the front ports are USB-2 and that the keyboard and mouse are connected to the USB-1 ports on the rear. There are 2 additional USB ports on the back that are colored blue, those are the USB-2 ports back there. The ports on the front, despite being USB-2, are black and not the blue color I'm used to. I think the USB standard states they must be blue if next to other speed USB ports which is correctly implemented on the backside.
+I inserted a USB storage key and verified the front ports are USB-2 and that the keyboard and mouse are connected to the USB-1 ports on the rear. There are 2 additional USB ports on the back that are colored blue, those are the USB-2 ports back there. The ports on the front, despite being USB-2, are black and not the blue color I'm used to. I think the USB standard states they must be blue if next to other speed USB ports which is what is on the backside.
 
 ```
 sysadmin@lab-ws01:~/$ lsusb
