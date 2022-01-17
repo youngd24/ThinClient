@@ -191,8 +191,6 @@ sysadmin@lab-ws01:~$ sudo hdparm -Tt /dev/sdb
  Timing buffered disk reads:  58 MB in  3.08 seconds =  18.84 MB/sec
 ```
 
-
-
 ## Power
 
 ### Connector
@@ -235,7 +233,28 @@ Thus far the only OS I have tried is Ubuntu 20.04 LTS, installation was as easy 
 
 ### Windows 10
 
-Under construction.
+Windows 10 generally performed ok on the 7010, it's not great but not unusable either. I took the "say no" option to nearly everything they wanted to push on me during installation. I suspect if you let it do it all pperformance will suffer. It did however consume more of the 32GB MLC flash than I had desired, I suppose if you strip more out it would be sufficient. But, as is, I don't think 32GB would work well for Windows long term on them.
+
+Use whatever means you have that works to create a Windows 10 installer USB key. Below is what I tried.
+
+#### WonderISO
+
+Since I don't run Windows, really at all, I didn't have a Windows machine around to do tht on. I first attempted to use a native MacOS utility, WonderISO, to create the installer key but that didn't work either, it wouldn't enumerate any of the USB ports or detect the key.
+
+#### Manual Creation
+
+From there I found a guide that had a manual procedure to create it:
+
+    * Erase the USB key, formatted as DOS
+    * Mount the Windows installation ISO
+    * Rsync a bunch of files from the mounted ISO to the USB key
+    * Use a brew utility, wimlib, to split the USB key into 4GB parts
+
+This didn't work for me, tried twice and the 7010 wouldn't boot the Windows installer from it.
+
+#### Windows Media Creation Tool
+
+ I ultimately used Microsoft's Windows Media Creation Tool to create a USB key based installer. I created a Windows 10 VM on my Mac, using VirtualBox, presented the USB key there and let the media creation tool do its thing. This worked.
 
 ## Use Cases and Ideas
 
